@@ -1,0 +1,21 @@
+class Client {
+private:
+    std::string name;
+    std::string email;
+    std::string phone;
+public:
+    Client() {}
+    Client(std::string name, std::string email, std::string phone) {
+        this->name = name;
+        this->email = email;
+        this->phone = phone;
+    }
+
+    // Геттеры и сеттеры
+    std::string get_name() { return name; }
+    void set_name(std::string name) { this->name = name; }
+    std::string get_email() { return email; }
+    void set_email(std::string email) { this->email = email; }
+    std::string get_phone() { return phone; }
+    void set_phone(std::string phone) { this->phone = phone; }
+};
